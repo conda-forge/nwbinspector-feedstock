@@ -1,5 +1,5 @@
 {% set name = "nwbinspector" %}
-{% set version = "0.3.9" %}
+{% set version = "0.4.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7143208b0eacd8dc6d545fe663f983712feebafaab34e3aff25f9a294bda76b7
+  sha256: f7a3814fbd49a94233e63f2108a562e1a03d8d8960825200e2dc3fcf09cc625c
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
   entry_points:
-   - nwbinspector = nwbinspector.nwbinspector:inspect_all_cli
+    - nwbinspector = nwbinspector.nwbinspector:inspect_all_cli
 
 requirements:
   host:
