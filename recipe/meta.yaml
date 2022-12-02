@@ -29,6 +29,7 @@ requirements:
     - pynwb
     - PyYAML
     - tqdm
+    - isodate
 
 test:
   requires:
