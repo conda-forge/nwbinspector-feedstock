@@ -1,5 +1,5 @@
 {% set name = "nwbinspector" %}
-{% set version = "0.4.24" %}
+{% set version = "0.4.25" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3e35dc7b700699a3df25c965c51b236a1f543116d4514c1784518fe4f4158491
+  sha256: bb079e76abc8586e159aa102d42e890954ab472b1950dc45a2ab11bb0f586c54
 
 build:
   noarch: python
