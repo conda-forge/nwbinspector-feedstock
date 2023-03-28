@@ -1,11 +1,11 @@
-About nwbinspector
-==================
+About nwbinspector-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nwbinspector-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/NeurodataWithoutBorders/nwbinspector
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/nwbinspector-feedstock/blob/main/LICENSE.txt)
 
 Summary: Tool to inspect NWB files for best practices compliance
 
