@@ -62,6 +62,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - stephprince
     - jwodder
     - yarikoptic
     - CodyCBakerPhD
