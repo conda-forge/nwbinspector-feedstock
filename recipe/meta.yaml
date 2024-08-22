@@ -14,7 +14,7 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
   entry_points:
-    - nwbinspector = nwbinspector.nwbinspector:inspect_all_cli
+    - nwbinspector = nwbinspector._inspection_cli:_inspect_all_cli
 
 requirements:
   host:
@@ -23,11 +23,18 @@ requirements:
     - setuptools
   run:
     - python >=3.8
+    - aiohttp
     - click
+    - hdmf-zarr
+    - fsspec
     - jsonschema
     - natsort
+    - numpy
+    - packaging
     - pynwb
     - PyYAML
+    - s3fs
+    - requests
     - tqdm
     - isodate
 
