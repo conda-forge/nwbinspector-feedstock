@@ -25,7 +25,6 @@ requirements:
     - python >=3.8
     - aiohttp
     - click
-    - hdmf-zarr
     - fsspec
     - jsonschema
     - natsort
