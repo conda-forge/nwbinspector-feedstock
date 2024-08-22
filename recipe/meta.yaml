@@ -28,7 +28,7 @@ requirements:
     - fsspec
     - jsonschema
     - natsort
-    - numpy
+    - numpy >=1.20.0, <2.0.0
     - packaging
     - pynwb
     - PyYAML
