@@ -1,5 +1,5 @@
 {% set name = "nwbinspector" %}
-{% set version = "0.4.37" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a55da7035b25b6dfdbbf56932f508d60bbd5715cbf4d80b98388eaeee967f57e
+  sha256: 8ebf93cead8955a9892777fae5f058a047415fe5d334aa6783313d1742eb5133
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   number: 0
   entry_points:
-    - nwbinspector = nwbinspector.nwbinspector:inspect_all_cli
+    - nwbinspector = nwbinspector._inspection_cli:_inspect_all_cli
 
 requirements:
   host:
@@ -23,11 +23,17 @@ requirements:
     - setuptools
   run:
     - python >=3.8
+    - aiohttp
     - click
+    - fsspec
     - jsonschema
     - natsort
+    - numpy >=1.20.0, <2.0.0
+    - packaging
     - pynwb
     - PyYAML
+    - s3fs
+    - requests
     - tqdm
     - isodate
 
