@@ -28,7 +28,7 @@ requirements:
     - aiohttp
     - click
     - fsspec
-    - hdmf-zarr
+    - hdmf_zarr
     - h5py <3.12.0
     - jsonschema
     - natsort
