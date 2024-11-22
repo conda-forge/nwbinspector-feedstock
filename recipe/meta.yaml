@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: b8162704dbd828588422930f0c8ac2a225e3a040e1f726df9878c3e14e15ee04
 
 build:
@@ -18,17 +18,21 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
     - setuptools
+    - hatchling
+    - hatch-vcs
   run:
-    - python >=3.8
+    - python >=3.9
     - aiohttp
     - click
     - fsspec
+    - hdmf-zarr
+    - h5py <3.12.0
     - jsonschema
     - natsort
-    - numpy >=1.20.0, <2.0.0
+    - numpy >=1.22.0, <2.0.0
     - packaging
     - pynwb
     - PyYAML
