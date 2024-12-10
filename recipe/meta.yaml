@@ -29,12 +29,10 @@ requirements:
     - click
     - fsspec
     - hdmf_zarr
-    - h5py <3.12.0
     - jsonschema
     - natsort
-    - numpy >=1.22.0, <2.0.0
     - packaging
-    - pynwb
+    - pynwb >=2.8, <3
     - PyYAML
     - s3fs
     - requests
