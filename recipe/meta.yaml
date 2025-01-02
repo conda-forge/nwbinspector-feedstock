@@ -12,19 +12,19 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - nwbinspector = nwbinspector._nwbinspector_cli:_nwbinspector_cli
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - setuptools
     - hatchling
     - hatch-vcs
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - aiohttp
     - click
     - fsspec
@@ -43,6 +43,7 @@ test:
   requires:
     - pytest
     - pytest-cov
+    - python {{ python_min }}
   source_files:
     - tests
   imports:
