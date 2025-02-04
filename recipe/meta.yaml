@@ -34,7 +34,6 @@ requirements:
     - packaging
     - pynwb >=2.8, <3
     - PyYAML
-    - s3fs
     - requests
     - tqdm
     - isodate
@@ -75,3 +74,4 @@ extra:
     - jwodder
     - yarikoptic
     - CodyCBakerPhD
+    - rly
