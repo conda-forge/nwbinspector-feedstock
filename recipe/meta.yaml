@@ -1,5 +1,5 @@
 {% set name = "nwbinspector" %}
-{% set version = "0.6.1" %}
+{% set version = "0.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 725a8038da4aa954fe6be0cd2c77a40880f0eb0bd18a7593d0c772c21ca163c2
+  sha256: 8f467a4cafb05a806ffd9dd537c7a1e9419c401ca38b63026d7b185d40854c73
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
   entry_points:
     - nwbinspector = nwbinspector._nwbinspector_cli:_nwbinspector_cli
 
@@ -34,7 +34,6 @@ requirements:
     - packaging
     - pynwb >=2.8, <3
     - PyYAML
-    - s3fs
     - requests
     - tqdm
     - isodate
@@ -75,3 +74,4 @@ extra:
     - jwodder
     - yarikoptic
     - CodyCBakerPhD
+    - rly
