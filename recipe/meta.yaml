@@ -32,7 +32,7 @@ requirements:
     - jsonschema
     - natsort
     - packaging
-    - pynwb >=2.8, <3
+    - pynwb >=2.8
     - PyYAML
     - requests
     - tqdm
