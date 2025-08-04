@@ -1,5 +1,5 @@
 {% set name = "nwbinspector" %}
-{% set version = "0.6.3" %}
+{% set version = "0.6.5" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: dc6ca28d5620d284987c9e32d3de9741ba342615029018b77f9c59d08b02448e
+  sha256: 93023bcd72c73add18644211fb26f6b005e012ec9c6a8b3f53e136ddeb58af16
 
 build:
   noarch: python
@@ -20,7 +20,6 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
     - hatchling
     - hatch-vcs
   run:
@@ -32,7 +31,7 @@ requirements:
     - jsonschema
     - natsort
     - packaging
-    - pynwb >=2.8
+    - pynwb >=3.1
     - PyYAML
     - requests
     - tqdm
