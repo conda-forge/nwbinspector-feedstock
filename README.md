@@ -158,7 +158,9 @@ Feedstock Maintainers
 =====================
 
 * [@CodyCBakerPhD](https://github.com/CodyCBakerPhD/)
+* [@bendichter](https://github.com/bendichter/)
+* [@h-mayorquin](https://github.com/h-mayorquin/)
+* [@oruebel](https://github.com/oruebel/)
 * [@rly](https://github.com/rly/)
-* [@stephprince](https://github.com/stephprince/)
 * [@yarikoptic](https://github.com/yarikoptic/)
 
